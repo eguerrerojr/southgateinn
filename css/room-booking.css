@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --newwhite:#D2D79F;
+    --newdark:#483838 ;
+    --newlightgreen:#90B77D;
+    --newdarkgreen:#42855B;
+}
+.container-room-booking{
+    width:100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/southgate.jpg');
+    background-repeat: no-repeat;
+    background-color:rgba(0,0,0,0.2);
+    background-blend-mode: multiply;
+}
+.title{
+    text-align: center;
+    /* margin-top: 2rem; */
+    position: relative;
+    top:4.2rem;
+    color: #483838;
+    text-shadow: 0px 0px 3px var(--newdarkgreen),  0px 0px 2px var(--newdarkgreen),  0px 0px 2px var(--newdarkgreen);
+    font-size: 1.6rem;
+}
+.table{
+    background-color:white;
+    padding:2.7rem 1.8rem;
+    position: absolute;
+    width: 90%;
+    top: 40%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+  
+}
+
+.table table, th, td {
+    border: 1px solid var(--newdark);
+    border-collapse: collapse;
+  }
+
+  .table th{
+    background-color: var(--newlightgreen);
+    padding:.8rem 1rem;
+  }
+  .table tr{
+    background-color: white;
+  }
+  .table td{
+    padding:.8rem;
+    padding-left: 2rem;
+  }
+  .table .buttons button{
+    padding:.6rem 1rem;
+    background-color: var(--newlightgreen);
+    border:none;
+    color:var(--newdark);
+    font-weight: 900;
+    border-radius: 2rem;
+    margin-left: .5rem;
+  }
+  .table .buttons button:hover{
+    background-color: white;
+    outline:1px solid var(--newdarkgreen);
+  }
+  .table .buttons{
+    margin-top: 1.1rem;
+    float: right;
+    position: relative;
+    top:2rem;
+  }
