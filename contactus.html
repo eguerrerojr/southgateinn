@@ -1,55 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SouthGate Inn</title>
+    <title> Contact </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/contactus.css">
-    <!-- fonts/ icons -->
+    <!-- email server -->
+  
+
     <script src="https://kit.fontawesome.com/330aa4d39e.js" crossorigin="anonymous"></script>
     <!-- Title Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-    <!-- animation style -->
+    <!-- animation -->
+    <script src="javascript/animate.js"defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="javascript/animate.js" defer></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-
-    <div class="container">
-        <header>
-            <div class="first-navbar">
-                <img src="images/sgi-bg.svg" style="width:58px;height:57px;margin:.4rem .2rem;">
-                  <a href="index.html" class="logo">South Gate Inn</a>
-                  </div>
-
-            <input type="checkbox" id="menu-bar">
-            <label for="menu-bar">Menu</label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="room.html">Room </a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                    <li><a href="book.html">Book Now</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- end of header -->
-
-        <div class="main-text">
-            <h1>Contact Us</h1>
-            <h3>Get in touch with our team</h3>
+    
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="images/sgi-bg.svg" class="logo" alt="">
+                <h2 style="color:var(--newdarkgreen);" onclick="document.location='index.html'">South Gate Inn</h2>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="blog.html">BLOG</a> </li>
+                <li> <a href="room.html">ROOMS</a> </li>
+                <li> <a href="contactus.html">CONTACT US</a> </li>
+                <li> <a href="book.html">BOOK NOW</a> </li>
+            </ul>
         </div>
+    </nav>
 
-           <!-- end of container -->
-     </div>
-        
+            <div class="main-container">
+                <div class="inner-container">
+                <h1>Contact Us</h1>
+                <h3>Get in touch with our team</h3>
+                </div>
+            </div>
 
-            <!-- NEW CONTAINER -->
-            <div class="sub-container">
+
+
+
+
+
+
+
+
+              <!-- NEW CONTAINER -->
+              <div class="sub-container">
                 <h2>Contact Information</h2>
                 <div class="contact-info" data-aos="zoom-out" data-aos-duration="1100" data-aos-once="true">
                     <div class="grid socials">
@@ -91,13 +101,13 @@
             <!-- formssss -->
             <div class="grid-form" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
 
-                <div class="form">
-                <form action="" name="contactus" id="contactus">
+                <div class="forms">
+                <form name="contactus" id="contactus">
                     <input placeholder="Your name" type="text" name="txtName" id="txtName" value="" required>
                     <input placeholder="Your email" type="text" name="txtEmail" id="txtEmail" value="" required>
                     <input placeholder="Subject" type="text" name="txtSubject" id="txtSubject" value="" required>
                     <textarea placeholder="Message" name="txtMessage" id="txtMessage" required></textarea>
-                    <button type="submit" name="submit" id="submit">Send Message</button>
+                    <button type="submit" name="submit" id="submit" onclick="sendEmail()">Send Message</button>
                 </form>
 
                 </div>
@@ -117,45 +127,72 @@
 
 
 
-    <!-- footer -->
-<footer>
-    <div class="footer" data-aos-duration="1100" data-aos="fade-right" data-aos-once="true">
 
-      <div class="ft first-footer">
-        <h4>PHONE SUPPORT</h4>
-        <h3>24/7 Call us now.</h3>
-        <h3>+63907253401</h3>
-      </div>
 
-      <div class="ft second-footer">
-        <h4>CONNECT WITH US</h4>
-        <h3>We are socialized. Follow us</h3>
-        <span style="display:flex;gap:1.3rem;margin-top:1.5rem;">
-        <i class='fab fa-facebook-f' style='font-size:24px'></i>
-        <i class='fab fa-twitter' style='font-size:24px'></i>
-        <i class='fab fa-instagram' style='font-size:24px'></i>
-        <i class='fas fa-envelope-open' style='font-size:24px'></i>
-        <i class='fab fa-youtube' style='font-size:24px'></i>
-      </span>
-      </div>
 
-      <div class="ft third-footer">
-      <h4>CONNECT WITH US</h4>
-      <h3>Lorem ipsum dolor sit amet consec.</h3>
-      <input for="email" placeholder="Enter email" style="margin-top:.7rem;">
-    </div>
-      
-    </div>
 
-    <p id="text-footer">© Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
-  </footer>
- 
-  
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-       <!-- firebase -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-       <script src="javascript/contactus.js"></script>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <footer>
+                <div class="footer" data-aos-duration="1100" data-aos="fade-right" data-aos-once="true">
+            
+                  <div class="ft first-footer">
+                    <h4>PHONE SUPPORT</h4>
+                    <h3>24/7 Call us now.</h3>
+                    <h3>+63907253401</h3>
+                  </div>
+            
+                  <div class="ft second-footer">
+                    <h4>CONNECT WITH US</h4>
+                    <h3>We are socialized. Follow us</h3>
+                    <span style="display:flex;gap:1.3rem;margin-top:1.5rem;">
+                    <i class='fab fa-facebook-f' style='font-size:24px'></i>
+                    <i class='fab fa-twitter' style='font-size:24px'></i>
+                    <i class='fab fa-instagram' style='font-size:24px'></i>
+                    <i class='fas fa-envelope-open' style='font-size:24px'></i>
+                    <i class='fab fa-youtube' style='font-size:24px'></i>
+                  </span>
+                  </div>
+            
+                  <div class="ft third-footer">
+                  <h4>CONNECT WITH US</h4>
+                  <h3>Lorem ipsum dolor sit amet consec.</h3>
+                  <input for="email" placeholder="Enter email" style="margin-top:.7rem;">
+                </div>
+                  
+                </div>
+            
+                <p id="text-footer">© Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+              </footer>
+    
+              
+              
+              
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="javascript/index.js"></script>
+         <!-- firebase -->
+
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+       <script src="javascript/contactus.js"></script> -->
+
+     
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script src="javascript/contactus.js"></script>
+    </body>
+    </html>

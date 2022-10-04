@@ -1,133 +1,621 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room - SouthGateInn</title>
+    <title> Room </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/room.css">
+
+    <script src="https://kit.fontawesome.com/330aa4d39e.js" crossorigin="anonymous"></script>
     <!-- Title Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-    <!-- JQuery -->
+    <!-- animation -->
+    <script src="javascript/animate.js"defer></script>
+    <script src="javascript/room-booking.js" defer></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="javascript/main-room.js" defer></script>
-    <!-- fonts/ icons -->
-    <script src="https://kit.fontawesome.com/330aa4d39e.js" crossorigin="anonymous"></script>
-    <!-- animation style -->
+    <!-- <script src="javascript/main-room.js"defer></script> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="javascript/animate.js" defer></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <!-- container -->
-    <div class="container">
-        <header>
-            <div class="first-navbar">
-                <img src="images/sgi-bg.svg" style="width:58px;height:57px;margin:.4rem .2rem;">
-                  <a href="index.html" class="logo">South Gate Inn</a>
+
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="images/sgi-bg.svg" class="logo" alt="">
+                <h2 style="color:var(--newdarkgreen);" onclick="document.location='index.html'">South Gate Inn</h2>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="blog.html">BLOG</a> </li>
+                <li> <a href="room.html">ROOMS</a> </li>
+                <li> <a href="contactus.html">CONTACT US</a> </li>
+                <li> <a href="book.html">BOOK NOW</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+            <div class="main-container">
+                <div class="inner-container">
+                <h1>ROOM</h1>
+                <h3>Make our hotel another home for you</h3>
+                </div>
+            </div>
+<!-- end of first container -->
+
+
+
+
+            <!-- BOOKING IN ROOM PAGE -->
+                   
+                    <div class="booking-form" id="form-room">
+
+                        <div class="title"><h1>Reserve now</h1></div>
+                      
+                        <form class="form-room" method="post" action="room-booking.php">
+
+                            
+                            <div class="choose-room-con">
+                            <label for="choose-room">Choose Room</label>
+                            <select name="choose-room" id="choose-room" type="text">
+                            <option>Executive Room</option>
+                            <option>Standard Room 1, Queen Bed</option>
+                            <option>Standard Twin Room</option>
+                            <option>Family Room</option>
+                           </select>
+                           </div>
+                           
+
+
+                            <div class="arrival-con">
+                                <label for="arrival" style="margin-left:1.3rem;">Arrival</label>
+                                <input type="date" name="arrival">
+                            </div>
+
+                            <div class="departure-con">
+                                <label for="departure" style="margin-left:1rem;">Departure</label>
+                                <input type="date" name="departure">
+                            </div>
+
+                            <div class="room-con">
+                                <label for="room"># Rooms</label>
+                                <select name="room">
+                                    <option>1 Room</option>
+                                    <option>2 Rooms</option>
+                                    <option>3 Rooms</option>
+                                    <option>4 Rooms</option>
+                                    <option>+5 Rooms</option>
+                                </select>
+                            </div>
+
+                            <div class="guest-con">
+                                <label for="guest">Number of Guest</label>
+                                <select name="guest">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>+5 Guests</option>
+                                </select>
+                            </div>
+
+                            <div class="email-con">
+                                <label for="email" style="margin-left:2rem;">Email</label>
+                                <input type="text" name="email">
+                            </div>
+
+                            <div class="submitForm">
+                                <button type="submit" name="submitForm" id="submitForm">ADD</button> 
+                            </div> 
+    
+                           
+                        </form>
+                     
+                    </div>
+
+
+            <!-- END OF BOOKING IN ROOM PAGE -->
+
+                
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ROOMSSSSS  -->
+    <div class="roomTitle">
+        <h4>South Gate Inn Rooms</h4>
+        <h1 style="text-align:center">Hotel Master Rooms</h1>
+    </div>
+
+    <div class="main-slideshow-container">
+
+
+            <!-- first grid----------------------------------- -->
+    <div class="slideshow-container">
+    <div class="mySlides1">
+        <img src="images/exe1.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="images/exe2.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="images/exe3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides1">
+        <img src="images/exe4.webp" style="width:100%">
+    </div>
+    <div class="mySlides1">
+        <img src="images/exe5.jpg" style="width:100%">
+    </div>
+
+    <div class="roomDetails">
+        <h2 style="text-align:center;">Executive Suite</h2>
+        <h4>Room Amenities</h4>
+        <div class="icon-batch1">
+        <span class="material-symbols-outlined" style="margin-top:1rem;">wifi</span><p class="icons-room">Free Internet</p>
+        </div>
+        <div class="icon-batch2">
+        <span class="material-symbols-outlined">bed</span><p class="icons-room">1 King Bed</p>
+        </div>
+        
+        <label class="tooltip">More Details ➤<input type="checkbox">
+         
+            
+            <div class="subtooltip"><h5 style="text-align:center;font-size:1rem;">ROOM AMENITIES</h5>
+                <span class="material-symbols-outlined" id="close">close</span>
+
+             <div class="sub-1"><span class="material-symbols-outlined">shower</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bathroom</p></div>
+             <ul>
+                <li>➤ &nbsp;Bidet </li>
+                <li>➤ &nbsp;Free toiletries </li>
+                <li>➤ &nbsp;Private bathroom </li>
+                <li>➤ &nbsp;Shampoo</li>
+                <li>➤ &nbsp;Shower</li>
+                <li>➤ &nbsp;Soap</li>
+                <li>➤ &nbsp;Toilet paper</li>
+                <li>➤ &nbsp;Towels</li>
+            </ul>
+
+            <div class="sub-1"><span class="material-symbols-outlined">king_bed</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bedroom</p></div>
+            <ul>
+               <li>➤ &nbsp;Air conditioning </li>
+               <li>➤ &nbsp;Bed sheets</li>
+               <li>➤ &nbsp;Seperate bedroom</li>
+           </ul>
+
+           <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">Entertainment</p></div>
+           <ul>
+              <li>➤ &nbsp;32-inch LED TV </li>
+              <li>➤ &nbsp;Cable channels</li>
+              <li>➤ &nbsp;Premium TV channels</li>
+          </ul>
+
+          <div class="sub-1"><span class="material-symbols-outlined">restaurant_menu</span><p style="color:var(--newdarkgreen);font-weight:bold;">Food and drinks</p></div>
+          <ul>
+             <li>➤ &nbsp;24-hour room service </li>
+         </ul>
+
+         <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">More</p></div>
+         <ul>
+            <li>➤ &nbsp;Daily house keeping </li>
+            <li>➤ &nbsp;Desk </li>
+            <li>➤ &nbsp;Iron/ironing board (on request) </li>
+        </ul>
+
+            </div>
+            
+           
+        
+        </label>
+       <!-- href="#form-room" -->
+        <a id="booknow" href="#form-room" class="first-button">Book now</a>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+   
+    </div>
+ 
+
+        <!-- second grid----------------------------------- -->
+    <div class="slideshow-container">
+    <div class="mySlides2">
+        <img src="images/st1-1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+        <img src="images/st1-2.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+        <img src="images/st1-3.webp" style="width:100%">
+    </div>
+
+    <!-- second slide show -->
+
+    <div class="roomDetails">
+        <h2 style="text-align:center;" class="str1">Standard Room 1 Queen Bed</h2>
+        <h4>Room Amenities</h4>
+        <div class="icon-batch1">
+        <span class="material-symbols-outlined" style="margin-top:1rem;">wifi</span><p class="icons-room">Free Internet</p>
+        </div>
+        <div class="icon-batch2">
+        <span class="material-symbols-outlined">bed</span><p class="icons-room">1 Queen Bed</p>
+        </div>
+        
+        <label class="tooltip">More Details ➤<input type="checkbox">
+            
+            <div class="subtooltip"><h5 style="text-align:center;font-size:1rem;">ROOM AMENITIES</h5>
+                <span class="material-symbols-outlined" id="close">close</span>
+
+             <div class="sub-1"><span class="material-symbols-outlined">shower</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bathroom</p></div>
+             <ul>
+                <li>➤ &nbsp;Bidet </li>
+                <li>➤ &nbsp;Free toiletries </li>
+                <li>➤ &nbsp;Private bathroom </li>
+                <li>➤ &nbsp;Shampoo</li>
+                <li>➤ &nbsp;Shower</li>
+                <li>➤ &nbsp;Soap</li>
+                <li>➤ &nbsp;Toilet paper</li>
+                <li>➤ &nbsp;Towels</li>
+            </ul>
+
+            <div class="sub-1"><span class="material-symbols-outlined">king_bed</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bedroom</p></div>
+            <ul>
+               <li>➤ &nbsp;Air conditioning </li>
+               <li>➤ &nbsp;Bed sheets</li>
+               <li>➤ &nbsp;Seperate bedroom</li>
+           </ul>
+
+           <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">Entertainment</p></div>
+           <ul>
+              <li>➤ &nbsp;32-inch LED TV </li>
+              <li>➤ &nbsp;Cable chahnnels</li>
+              <li>➤ &nbsp;Premium TV channels</li>
+          </ul>
+
+          <div class="sub-1"><span class="material-symbols-outlined">restaurant_menu</span><p style="color:var(--newdarkgreen);font-weight:bold;">Food and drinks</p></div>
+          <ul>
+             <li>➤ &nbsp;24-hour room service </li>
+         </ul>
+
+         <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">More</p></div>
+         <ul>
+            <li>➤ &nbsp;Daily house keeping </li>
+            <li>➤ &nbsp;Desk </li>
+            <li>➤ &nbsp;Iron/ironing board (on request) </li>
+        </ul>
+
+            </div>
+           
+        
+        </label>
+
+        <a id="booknow" href="#form-room">Book now</a>
+
+    </div>
+    <!-- end of second slide show -->
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+
+
+
+        <!-- second rowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww ********************************* -->
+            <!-- third grid -->
+        
+        <div class="slideshow-container">
+            <div class="mySlides3">
+                <img src="images/str-1.webp" style="width:100%">
+            </div>
+        
+            <div class="mySlides3">
+                <img src="images/str-2.webp" style="width:100%">
+            </div>
+        
+            <div class="mySlides3">
+                <img src="images/DELUXE ROOM.jpg" style="width:100%">
+            </div> 
+        
+            <div class="roomDetails">
+                <h2 style="text-align:center;">Standard Twin Room</h2>
+                <h4>Room Amenities</h4>
+                <div class="icon-batch1">
+                <span class="material-symbols-outlined" style="margin-top:1rem;">wifi</span><p class="icons-room">Free Internet</p>
+                </div>
+                <div class="icon-batch2">
+                <span class="material-symbols-outlined">bed</span><p class="icons-room">2 Twin Beds</p>
+                </div>
+                
+                <label class="tooltip">More Details ➤<input type="checkbox">
+                    
+                    <div class="subtooltip"><h5 style="text-align:center;font-size:1rem;">ROOM AMENITIES</h5>
+                        <span class="material-symbols-outlined" id="close">close</span>
+        
+                     <div class="sub-1"><span class="material-symbols-outlined">shower</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bathroom</p></div>
+                     <ul>
+                        <li>➤ &nbsp;Bidet </li>
+                        <li>➤ &nbsp;Free toiletries </li>
+                        <li>➤ &nbsp;Private bathroom </li>
+                        <li>➤ &nbsp;Shampoo</li>
+                        <li>➤ &nbsp;Shower</li>
+                        <li>➤ &nbsp;Soap</li>
+                        <li>➤ &nbsp;Toilet paper</li>
+                        <li>➤ &nbsp;Towels</li>
+                    </ul>
+        
+                    <div class="sub-1"><span class="material-symbols-outlined">king_bed</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bedroom</p></div>
+                    <ul>
+                       <li>➤ &nbsp;Air conditioning </li>
+                       <li>➤ &nbsp;Bed sheets</li>
+                       
+                   </ul>
+        
+                   <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">Entertainment</p></div>
+                   <ul>
+                      <li>➤ &nbsp;32-inch LED TV </li>
+                      <li>➤ &nbsp;Cable channels</li>
+                      <li>➤ &nbsp;Premium TV channels</li>
+                  </ul>
+        
+                  <div class="sub-1"><span class="material-symbols-outlined">restaurant_menu</span><p style="color:var(--newdarkgreen);font-weight:bold;">Food and drinks</p></div>
+                  <ul>
+                     <li>➤ &nbsp;24-hour room service </li>
+                 </ul>
+        
+                 <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">More</p></div>
+                 <ul>
+                    <li>➤ &nbsp;Daily house keeping </li>
+                    <li>➤ &nbsp;Desk </li>
+                    <li>➤ &nbsp;Iron/ironing board (on request) </li>
+                </ul>
+        
+                    </div>
+                   
+                
+                </label>
+                <a id="booknow" href="#form-room">Book now</a>
+        
+            </div>
+        
+            <a class="prev" onclick="plusSlides2(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1, 0)">&#10095;</a>
+            </div>
+        
+                <!-- fourth grid----------------------------------- -->
+            <div class="slideshow-container">
+            <div class="mySlides4">
+                <img src="images/fr1.webp" style="width:100%">
+            </div>
+        
+            <div class="mySlides4">
+                <img src="images/fr2.jpg" style="width:100%">
+            </div>
+         
+            <div class="mySlides4">
+                <img src="images/fr3.webp" style="width:100%">
+            </div>
+            <div class="mySlides4">
+                <img src="images/fr4.jpg" style="width:100%">
+            </div>
+         
+         
+          
+        
+            <div class="roomDetails">
+                <h2 style="text-align:center;">Family Room</h2>
+                <h4>Room Amenities</h4>
+                <div class="icon-batch1">
+                <span class="material-symbols-outlined" style="margin-top:1rem;">wifi</span><p class="icons-room">Free Internet</p>
+                </div>
+                <div class="icon-batch2">
+                <span class="material-symbols-outlined">bed</span><p class="icons-room">1 Queen Bed and 1 Twin Bed</p>
+                </div>
+                
+                <label class="tooltip">More Details ➤<input type="checkbox">
+                    
+                    <div class="subtooltip"><h5 style="text-align:center;font-size:1rem;">ROOM AMENITIES</h5>
+                        <span class="material-symbols-outlined" id="close">close</span>
+        
+                     <div class="sub-1"><span class="material-symbols-outlined">shower</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bathroom</p></div>
+                     <ul>
+                        <li>➤ &nbsp;Bidet </li>
+                        <li>➤ &nbsp;Free toiletries </li>
+                        <li>➤ &nbsp;Private bathroom </li>
+                        <li>➤ &nbsp;Shampoo</li>
+                        <li>➤ &nbsp;Shower</li>
+                        <li>➤ &nbsp;Soap</li>
+                        <li>➤ &nbsp;Toilet paper</li>
+                        <li>➤ &nbsp;Towels</li>
+                    </ul>
+        
+                    <div class="sub-1"><span class="material-symbols-outlined">king_bed</span><p style="color:var(--newdarkgreen);font-weight:bold;">Bedroom</p></div>
+                    <ul>
+                       <li>➤ &nbsp;Air conditioning </li>
+                       <li>➤ &nbsp;Bed sheets</li>
+                       <li>➤ &nbsp;Seperate bedroom</li>
+                   </ul>
+        
+                   <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">Entertainment</p></div>
+                   <ul>
+                      <li>➤ &nbsp;32-inch LED TV </li>
+                      <li>➤ &nbsp;Cable chahnnels</li>
+                      <li>➤ &nbsp;Premium TV channels</li>
+                  </ul>
+        
+                  <div class="sub-1"><span class="material-symbols-outlined">restaurant_menu</span><p style="color:var(--newdarkgreen);font-weight:bold;">Food and drinks</p></div>
+                  <ul>
+                     <li>➤ &nbsp;24-hour room service </li>
+                 </ul>
+        
+                 <div class="sub-1"><span class="material-symbols-outlined">done</span><p style="color:var(--newdarkgreen);font-weight:bold;">More</p></div>
+                 <ul>
+                    <li>➤ &nbsp;Daily house keeping </li>
+                    <li>➤ &nbsp;Desk </li>
+                    <li>➤ &nbsp;Iron/ironing board (on request) </li>
+                </ul>
+        
+                    </div>
+                   
+                
+                </label>
+                <a id="booknow" href="#form-room">Book now</a>
+                
+            </div>
+       
+            <!-- end of second slide show -->
+            <a class="prev" onclick="plusSlides2(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1, 1)">&#10095;</a>
+            </div>
+
+        <!-- second row ********************************* -->
+
+
+
+
+
+    <!-- main container -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+            <footer>
+                <div class="footer" data-aos-duration="1100" data-aos="fade-right" data-aos-once="true">
+
+                  <div class="ft first-footer">
+                    <h4>PHONE SUPPORT</h4>
+                    <h3>24/7 Call us now.</h3>
+                    <h3>+63907253401</h3>
                   </div>
 
-            <input type="checkbox" id="menu-bar">
-            <label for="menu-bar" style="color:var(--newdarkgreen);">Menu</label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="room.html">Room </a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                    <li><a href="book.html">Book Now</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- end of header -->
+                  <div class="ft second-footer">
+                    <h4>CONNECT WITH US</h4>
+                    <h3>We are socialized. Follow us</h3>
+                    <span style="display:flex;gap:1.3rem;margin-top:1.5rem;">
+                    <i class='fab fa-facebook-f' style='font-size:24px'></i>
+                    <i class='fab fa-twitter' style='font-size:24px'></i>
+                    <i class='fab fa-instagram' style='font-size:24px'></i>
+                    <i class='fas fa-envelope-open' style='font-size:24px'></i>
+                    <i class='fab fa-youtube' style='font-size:24px'></i>
+                  </span>
+                  </div>
 
-        <div class="main-text">
-            <h1>Rooms</h1>
-            <h3>Make our hotel another home for you</h3>
-        </div>
-          <!-- end of container -->
-     </div>
-        
-     <div class="room-title" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
-        <h4>South Gate Inn Rooms</h4>
-        <h1>Hotel Master's Room</h1>
-     </div>
-     
-     <div class="gallery-grid">
-        <div class="grid grid1" data-aos="fade-down" data-aos-duration="1400" data-aos-once="true">
-            <img src="images/room1.jpg">
-        </div>
-        <div class="grid grid2 grid-text" >
-            <p class="text-white1">★★★★★</p>
-            <p class="text-white1">$120 <span>per night</span></p>
-            <h2>Suite Room</h2>
-            <button>View Room Details ➙</button>
-        </div>
-        <div class="grid grid3" data-aos="fade-down" data-aos-duration="1300" data-aos-once="true">
-            <img src="images/SUITE ROOM.jpg">
-        </div>
-        <div class="grid grid4 grid-text" >
-            <p class="text-white2">★★★★★</p>
-            <p class="text-white2">$120 <span>per night</span></p>
-            <h2>Suite Room</h2>
-            <button>View Room Details ➙</button>
-        </div>
-        <div class="grid grid5" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
-            <img src="images/room3.jpg">
-        </div>
-        <div class="grid grid6 grid-text">
-            <p class="text-white3">★★★★★</p>
-            <p class="text-white3">$120 <span>per night</span></p>
-            <h2>Suite Room</h2>
-            <button>View Room Details ➙</button>
-        </div>
-        <div class="grid grid7" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
-            <img src="images/room4.jpg">
-        </div>
-        <div class="grid grid8 grid-text" >
-            <p class="text-white4">★★★★★</p>
-            <p class="text-white4">$120 <span>per night</span></p>
-            <h2>Suite Room</h2>
-            <button>View Room Details ➙</button>
-        </div>
-     </div>
+                  <div class="ft third-footer">
+                  <h4>CONNECT WITH US</h4>
+                  <h3>Lorem ipsum dolor sit amet consec.</h3>
+                  <input for="email" placeholder="Enter email" style="margin-top:.7rem;">
+                </div>
 
-       <!-- footer -->
-<footer>
-    <div class="footer" data-aos-duration="1100" data-aos="fade-right" data-aos-once="true">
+                </div>
 
-      <div class="ft first-footer">
-        <h4>PHONE SUPPORT</h4>
-        <h3>24/7 Call us now.</h3>
-        <h3>+63907253401</h3>
-      </div>
+                <p id="text-footer">© Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+              </footer>
 
-      <div class="ft second-footer">
-        <h4>CONNECT WITH US</h4>
-        <h3>We are socialized. Follow us</h3>
-        <span style="display:flex;gap:1.3rem;margin-top:1.5rem;">
-        <i class='fab fa-facebook-f' style='font-size:24px'></i>
-        <i class='fab fa-twitter' style='font-size:24px'></i>
-        <i class='fab fa-instagram' style='font-size:24px'></i>
-        <i class='fas fa-envelope-open' style='font-size:24px'></i>
-        <i class='fab fa-youtube' style='font-size:24px'></i>
-      </span>
-      </div>
 
-      <div class="ft third-footer">
-      <h4>CONNECT WITH US</h4>
-      <h3>Lorem ipsum dolor sit amet consec.</h3>
-      <input for="email" placeholder="Enter email" style="margin-top:.7rem;">
-    </div>
-      
-    </div>
 
-    <p id="text-footer">© Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
-  </footer>
- 
-  
+        <script src="javascript/main-room.js"defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="javascript/index.js"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
-</html>
+        <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1","mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+           
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {
+                slideIndex[no] = 1
+            }    
+              if (n < 1) {
+                slideIndex[no] = x.length
+            }
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+
+            
+        <script>
+            let slideIndex2 = [1,1];
+            let slideId2 = ["mySlides3","mySlides4"]
+            showSlides2(1, 0);
+            showSlides2(1, 1);
+           
+            
+            function plusSlides2(n2, no2) {
+              showSlides2(slideIndex2[no2] += n2, no2);
+            }
+            
+            function showSlides2(n2, no2) {
+              let i;
+              let x = document.getElementsByClassName(slideId2[no2]);
+              if (n2 > x.length) {
+                slideIndex2[no2] = 1
+            }    
+              if (n2 < 1) {
+                slideIndex2[no2] = x.length
+            }
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex2[no2]-1].style.display = "block";  
+            }
+            </script>
+
+
+
+
+    </body>
+    </html>
